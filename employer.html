@@ -1,0 +1,15 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>For Employers | CareerConnect</title><link rel="stylesheet" href="css/style.css"><script defer src="js/app.js"></script></head>
+<body><header class="site-header"><a class="brand" href="index.html"><span class="brand-mark">CC</span> CareerConnect</a><button class="menu-toggle" aria-label="Toggle navigation" aria-expanded="false">☰</button><nav class="nav-links"><a href="index.html">Home</a><a href="jobs.html">Find Jobs</a><a class="active" href="employer.html">For Employers</a><a href="login.html">Login</a><a class="btn btn-small" href="register.html">Sign Up</a></nav></header>
+<main class="page-wrap narrow"><div class="page-title"><span class="eyebrow">HIRE GREAT PEOPLE</span><h1>Post a job opportunity</h1><p>Tell candidates about your company and the role you want to fill.</p></div>
+<section class="form-card"><form id="employer-form" class="form-grid" novalidate>
+<div class="field"><label for="company-name">Company name</label><input id="company-name" name="company" minlength="2" maxlength="80" required></div>
+<div class="field"><label for="contact-person">Contact person</label><input id="contact-person" name="contact" minlength="3" maxlength="60" required></div>
+<div class="field"><label for="employer-email">Work email</label><input id="employer-email" name="email" type="email" required></div>
+<div class="field"><label for="employer-phone">Phone</label><input id="employer-phone" name="phone" type="tel" pattern="[0-9+() -]{7,20}" required></div>
+<div class="field full"><label for="position-title">Job title</label><input id="position-title" name="title" placeholder="e.g. Frontend Developer" minlength="3" required></div>
+<div class="field"><label for="work-location">Location</label><select id="work-location" name="location" required><option value="">Choose location</option><option>Islamabad</option><option>Lahore</option><option>Karachi</option><option>Remote</option></select></div>
+<div class="field"><label for="employment-type">Employment type</label><select id="employment-type" name="type" required><option value="">Choose type</option><option>Full-time</option><option>Part-time</option><option>Internship</option><option>Remote</option></select></div>
+<div class="field full"><label for="job-description">Job description</label><textarea id="job-description" name="description" rows="5" minlength="30" maxlength="1500" required placeholder="Describe responsibilities, skills and qualifications (at least 30 characters)."></textarea></div>
+<div class="field full"><button class="btn btn-block" type="submit">Submit job details →</button><p id="employer-message" class="form-message" role="status"></p></div>
+</form></section></main><footer class="footer"><small>© <span data-year></span> CareerConnect. Lab 3 project demo.</small></footer></body></html>

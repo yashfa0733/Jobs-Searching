@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Find Jobs | CareerConnect</title><link rel="stylesheet" href="css/style.css"><script defer src="js/app.js"></script></head>
+<body>
+<header class="site-header"><a class="brand" href="index.html"><span class="brand-mark">CC</span> CareerConnect</a><button class="menu-toggle" aria-label="Toggle navigation" aria-expanded="false">☰</button><nav class="nav-links" aria-label="Main navigation"><a href="index.html">Home</a><a class="active" href="jobs.html">Find Jobs</a><a href="employer.html">For Employers</a><a href="login.html">Login</a><a class="btn btn-small" href="register.html">Sign Up</a></nav></header>
+<main class="page-wrap">
+  <div class="page-title"><span class="eyebrow">OPPORTUNITIES FOR YOU</span><h1>Find your next job</h1><p>Search open roles and discover where your skills can take you.</p></div>
+  <form id="job-search" class="filter-panel">
+    <div class="field"><label for="job-keyword">Keyword</label><input id="job-keyword" name="q" placeholder="e.g. Frontend Developer"></div>
+    <div class="field"><label for="job-location">Location</label><select id="job-location"><option value="">All locations</option><option>Islamabad</option><option>Lahore</option><option>Karachi</option><option>Remote</option></select></div>
+    <div class="field"><label for="job-type">Job type</label><select id="job-type"><option value="">All types</option><option>Full-time</option><option>Part-time</option><option>Internship</option><option>Remote</option></select></div>
+    <button class="btn" type="submit">Search</button>
+  </form>
+  <div class="results-head"><h2>Latest opportunities</h2><span id="result-count" class="muted"></span></div>
+  <div id="job-list" class="job-list">
+    <article class="job-card" data-title="Frontend Developer" data-company="PixelCraft Studio" data-location="Islamabad" data-type="Full-time"><div class="company-logo">P</div><div class="job-info"><h3>Frontend Developer</h3><p>PixelCraft Studio · Islamabad</p><div class="tags"><span>Full-time</span><span>HTML/CSS/JS</span><span>On-site</span></div></div><a class="btn btn-outline" href="apply.html?job=Frontend%20Developer">Apply now</a></article>
+    <article class="job-card" data-title="UI/UX Designer" data-company="Northstar Digital" data-location="Remote" data-type="Remote"><div class="company-logo purple">N</div><div class="job-info"><h3>UI/UX Designer</h3><p>Northstar Digital · Remote</p><div class="tags"><span>Remote</span><span>Figma</span><span>Full-time</span></div></div><a class="btn btn-outline" href="apply.html?job=UI%2FUX%20Designer">Apply now</a></article>
+    <article class="job-card" data-title="Marketing Assistant" data-company="BrightPath" data-location="Lahore" data-type="Internship"><div class="company-logo orange">B</div><div class="job-info"><h3>Marketing Assistant</h3><p>BrightPath · Lahore</p><div class="tags"><span>Internship</span><span>Social media</span><span>Entry level</span></div></div><a class="btn btn-outline" href="apply.html?job=Marketing%20Assistant">Apply now</a></article>
+    <article class="job-card" data-title="Junior Accountant" data-company="Ledger & Co." data-location="Karachi" data-type="Full-time"><div class="company-logo green">L</div><div class="job-info"><h3>Junior Accountant</h3><p>Ledger &amp; Co. · Karachi</p><div class="tags"><span>Full-time</span><span>Excel</span><span>Finance</span></div></div><a class="btn btn-outline" href="apply.html?job=Junior%20Accountant">Apply now</a></article>
+    <article class="job-card" data-title="Backend Developer" data-company="CodeHarbor" data-location="Islamabad" data-type="Part-time"><div class="company-logo">C</div><div class="job-info"><h3>Backend Developer</h3><p>CodeHarbor · Islamabad</p><div class="tags"><span>Part-time</span><span>PHP</span><span>MySQL</span></div></div><a class="btn btn-outline" href="apply.html?job=Backend%20Developer">Apply now</a></article>
+  </div>
+  <p id="no-jobs" class="empty-state" hidden>No matching jobs found. Try changing your search filters.</p>
+</main><footer class="footer"><a class="brand" href="index.html"><span class="brand-mark">CC</span> CareerConnect</a><small>© <span data-year></span> CareerConnect. Lab 3 project demo.</small></footer>
+</body></html>
